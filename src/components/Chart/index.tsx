@@ -1,6 +1,6 @@
 import React from "react";
 // @ts-ignore
-import AnyChart from "../../../node_modules/anychart-react/dist/anychart-react";
+import AnyChart from "anychart-react";
 import { CHART_DATA_1, CHART_DATA_2 } from "../../data";
 
 const Chart = () => {
@@ -14,27 +14,7 @@ const Chart = () => {
         data={data_1}
         title="First Chart"
         legend="true"
-        layout="vertical"
         width={1000}
-        grid={[1]}
-        // lineMarker={[
-        //   1,
-        //   {
-        //     value: 2,
-        //   },
-        // ]}
-        // step={2}
-        // yAxis={[
-        //   1,
-        //   {
-        //     orientation: "right",
-        //     enabled: true,
-        //     labels: {
-        //       format: "{%Value}{decimalPoint:\\,}",
-        //       fontColor: "red",
-        //     },
-        //   },
-        // ]}
       />
       <AnyChart
         type="column"
